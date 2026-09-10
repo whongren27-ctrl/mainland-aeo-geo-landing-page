@@ -204,7 +204,7 @@ function App() {
             </div>
             <div className="query-card">
               <span>用户提问</span>
-              <p>“北京种植牙怎么选？有没有适合上班族的方案？”</p>
+              <p>“我想做光子嫩肤，帮我比较成都成华区的医院并给我做个推荐。”</p>
             </div>
             <div className="answer-stream">
               <div className="answer-line wide" />
