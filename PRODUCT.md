@@ -30,6 +30,8 @@ The service language must fit mainland China search and AI discovery behavior. A
 
 The first version must be responsive, directly runnable locally, and include Hero, pain points, AI search trends, SEO versus AI search comparison, dental and aesthetic industry analysis, services, advantages, process, cases or feedback, FAQ, multiple CTAs, and footer.
 
+The commercial offer should include a clearly presented annual paid subscription priced at RMB 100,000 per year, with concrete deliverables for AI front-rank monitoring, ranking opportunity analysis, placement work, conversion handoff, and ongoing iteration.
+
 Do not copy protected complete copy or unique assets from the reference site. Do not fabricate real customer identities or verifiable customer claims; use clearly labeled anonymous or illustrative examples.
 
 ## Brand Commitments

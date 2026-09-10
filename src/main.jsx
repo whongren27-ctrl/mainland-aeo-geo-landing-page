@@ -8,6 +8,7 @@ const navItems = [
   ['趋势', '#trend'],
   ['行业分析', '#industries'],
   ['服务', '#services'],
+  ['年度订阅', '#subscription'],
   ['流程', '#process'],
   ['反馈', '#proof'],
   ['FAQ', '#faq'],
@@ -71,6 +72,15 @@ const services = [
   ['机构实体与权威信号建设', '统一机构名称、地址、医生、项目、资质、服务范围和口碑线索，为 AI 推荐前排提供可信实体基础。'],
   ['前排结果与微信承接', '让进入 AI 前几个候选的用户快速找到微信入口，并用项目、城市和需求话术承接高意向咨询。'],
   ['月度排名追踪迭代', '持续记录 AI 前排位置、候选名单变化、竞品动作和咨询质量，按排名机会调整布点。'],
+];
+
+const subscriptionItems = [
+  ['前排排名基线', '建立机构在豆包、Kimi、DeepSeek 的问题词清单，持续记录前几个结果、候选名单和同城竞品位置。'],
+  ['年度问题地图', '围绕种植牙、矫正、光电、注射、抗衰等核心项目，持续扩展城市词、需求词、比较词和高意向咨询词。'],
+  ['排名布点与页面建设', '规划并上线项目页、医生页、机构实体页、FAQ、对比说明和风险边界，让机构具备进入前排的信号基础。'],
+  ['竞品与推荐理由拆解', '每月分析谁进入了前几个结果、AI 为什么推荐他们、机构缺少哪些可信信号，并形成下一轮动作清单。'],
+  ['微信转化系统', '设计从 AI 前排结果到微信咨询的入口、话术、项目标签和预约承接，让前排曝光转成可跟进线索。'],
+  ['月度复盘与策略迭代', '按排名变化、模型回答、城市竞争和真实咨询反馈调整重点，持续冲击更高的候选位置。'],
 ];
 
 const process = [
@@ -284,6 +294,30 @@ function App() {
                 <p>{text}</p>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="section-pad subscription" id="subscription">
+          <div className="section-head compact">
+            <h2>年度 AI 搜索前排订阅</h2>
+            <p>适合希望持续进入 AI 搜索前几个结果、而不是做一次性页面优化的牙科医院与医美机构。</p>
+          </div>
+          <div className="subscription-card">
+            <div className="subscription-summary">
+              <span className="subscription-badge">年度合作方案</span>
+              <div className="subscription-price"><strong>¥100,000</strong><span>/ 年</span></div>
+              <p>围绕机构的城市、项目与目标客群，持续做 AI 前排排名监测、推荐位竞争、内容与实体布点、微信转化承接。</p>
+              <button className="primary-btn" onClick={openWechat}>微信咨询年度订阅</button>
+              <small>不承诺固定第一名；以进入前几个候选、提高出现率和持续排名追踪为目标。</small>
+            </div>
+            <div className="subscription-list">
+              {subscriptionItems.map(([title, text], index) => (
+                <div className="subscription-item" key={title}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <div><h3>{title}</h3><p>{text}</p></div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
